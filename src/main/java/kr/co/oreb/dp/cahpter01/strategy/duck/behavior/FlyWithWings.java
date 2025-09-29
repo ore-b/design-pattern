@@ -1,6 +1,6 @@
-package kr.co.oreb.dp.strategy.duck.behavior;
+package kr.co.oreb.dp.cahpter01.strategy.duck.behavior;
 
-public class FlyWithWings implements FlyBehavior{
+public class FlyWithWings implements FlyBehavior {
 
     @Override
     public void fly() {

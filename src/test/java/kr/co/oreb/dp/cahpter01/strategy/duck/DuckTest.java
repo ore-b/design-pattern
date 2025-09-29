@@ -1,4 +1,4 @@
-package kr.co.oreb.dp.strategy.duck;
+package kr.co.oreb.dp.cahpter01.strategy.duck;
 
 import java.util.List;
 import org.junit.jupiter.api.Test;
