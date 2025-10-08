@@ -1,6 +1,8 @@
 package kr.co.oreb.dp.chapter09_1.iterator;
 
-public class DinerMenu implements Menu {
+import java.util.Iterator;
+
+public class DinerMenu implements Iterable<MenuItem> {
 
     private final MenuItem[] items;
 
@@ -12,9 +14,8 @@ public class DinerMenu implements Menu {
     }
 
     @Override
-    public DinerMenuIterator createIterator() {
+    public Iterator<MenuItem> iterator() {
         return new DinerMenuIterator(items);
     }
-
 }
 

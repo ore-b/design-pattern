@@ -3,7 +3,7 @@ package kr.co.oreb.dp.chapter09_1.iterator;
 import java.util.Hashtable;
 import java.util.Iterator;
 
-public class CafeMenu implements Menu {
+public class CafeMenu implements Iterable<MenuItem> {
 
     private final Hashtable items;
 
@@ -18,7 +18,7 @@ public class CafeMenu implements Menu {
     }
 
     @Override
-    public Iterator<MenuItem> createIterator() {
+    public Iterator<MenuItem> iterator() {
         return items.values().iterator();
     }
 }

@@ -2,7 +2,7 @@ package kr.co.oreb.dp.chapter09_1.iterator;
 
 import java.util.ArrayList;
 
-public class PancakeHouseMenu implements Menu {
+public class PancakeHouseMenu implements Iterable<MenuItem> {
 
     private final ArrayList<MenuItem> items;
 
@@ -14,7 +14,7 @@ public class PancakeHouseMenu implements Menu {
     }
 
     @Override
-    public PancakeHouseMenuIterator createIterator() {
+    public PancakeHouseMenuIterator iterator() {
         return new PancakeHouseMenuIterator(items);
     }
 }

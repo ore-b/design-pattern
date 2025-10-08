@@ -10,11 +10,12 @@ public class IteratorTest {
         printMenu(new PancakeHouseMenu(), new DinerMenu(), new CafeMenu());
     }
 
-    private void printMenu(Menu... menus) {
+    @SafeVarargs
+    private void printMenu(Iterable<MenuItem>... menus) {
 
-        for (Menu menu : menus) {
+        for (Iterable<MenuItem> menu : menus) {
 
-            Iterator<MenuItem> iterator = menu.createIterator();
+            Iterator<MenuItem> iterator = menu.iterator();
 
             while (iterator.hasNext()) {
                 MenuItem menuItem = iterator.next();
