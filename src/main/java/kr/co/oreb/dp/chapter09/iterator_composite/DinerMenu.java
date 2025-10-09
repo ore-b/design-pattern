@@ -1,4 +1,4 @@
-package kr.co.oreb.dp.chapter09_1.iterator;
+package kr.co.oreb.dp.chapter09.iterator_composite;
 
 import java.util.Iterator;
 
