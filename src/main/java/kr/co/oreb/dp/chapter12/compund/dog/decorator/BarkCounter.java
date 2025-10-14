@@ -1,7 +1,7 @@
-package kr.co.oreb.dp.chapter12.compund.decorator;
+package kr.co.oreb.dp.chapter12.compund.dog.decorator;
 
-import kr.co.oreb.dp.chapter12.compund.Barkable;
-import kr.co.oreb.dp.chapter12.compund.observer.Observer;
+import kr.co.oreb.dp.chapter12.compund.dog.Barkable;
+import kr.co.oreb.dp.chapter12.compund.dog.observer.Observer;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor

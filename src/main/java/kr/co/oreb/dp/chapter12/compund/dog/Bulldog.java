@@ -1,19 +1,19 @@
-package kr.co.oreb.dp.chapter12.compund;
+package kr.co.oreb.dp.chapter12.compund.dog;
 
-import kr.co.oreb.dp.chapter12.compund.observer.Observable;
-import kr.co.oreb.dp.chapter12.compund.observer.Observer;
+import kr.co.oreb.dp.chapter12.compund.dog.observer.Observable;
+import kr.co.oreb.dp.chapter12.compund.dog.observer.Observer;
 
-public class RubberDog implements Barkable {
+public class Bulldog implements Barkable {
 
     private final Observable observable;
 
-    public RubberDog() {
+    public Bulldog() {
         this.observable = new Observable(this);
     }
 
     @Override
     public void bark() {
-        System.out.println("삑~!");
+        System.out.println("그르르르르~");
         notifyObservers();
     }
 

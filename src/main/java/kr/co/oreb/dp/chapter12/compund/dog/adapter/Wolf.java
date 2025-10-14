@@ -1,4 +1,4 @@
-package kr.co.oreb.dp.chapter12.compund.adapter;
+package kr.co.oreb.dp.chapter12.compund.dog.adapter;
 
 public class Wolf {
 

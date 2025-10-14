@@ -1,9 +1,9 @@
-package kr.co.oreb.dp.chapter12.compund.adapter;
+package kr.co.oreb.dp.chapter12.compund.dog.adapter;
 
 
-import kr.co.oreb.dp.chapter12.compund.Barkable;
-import kr.co.oreb.dp.chapter12.compund.observer.Observable;
-import kr.co.oreb.dp.chapter12.compund.observer.Observer;
+import kr.co.oreb.dp.chapter12.compund.dog.Barkable;
+import kr.co.oreb.dp.chapter12.compund.dog.observer.Observable;
+import kr.co.oreb.dp.chapter12.compund.dog.observer.Observer;
 
 public class WolfAdapter implements Barkable {
 

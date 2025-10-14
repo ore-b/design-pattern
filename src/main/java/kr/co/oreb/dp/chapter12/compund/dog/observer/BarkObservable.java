@@ -1,4 +1,4 @@
-package kr.co.oreb.dp.chapter12.compund.observer;
+package kr.co.oreb.dp.chapter12.compund.dog.observer;
 
 public interface BarkObservable {
 

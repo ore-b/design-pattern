@@ -1,11 +1,15 @@
 package kr.co.oreb.dp.chapter12.compound;
 
-import kr.co.oreb.dp.chapter12.compund.Barkable;
-import kr.co.oreb.dp.chapter12.compund.Flock;
-import kr.co.oreb.dp.chapter12.compund.decorator.BarkCounter;
-import kr.co.oreb.dp.chapter12.compund.factory.AbstractDogFactory;
-import kr.co.oreb.dp.chapter12.compund.factory.CountingDogFactory;
-import kr.co.oreb.dp.chapter12.compund.observer.BarkOlogist;
+import kr.co.oreb.dp.chapter12.compund.dog.Barkable;
+import kr.co.oreb.dp.chapter12.compund.dog.Flock;
+import kr.co.oreb.dp.chapter12.compund.dog.decorator.BarkCounter;
+import kr.co.oreb.dp.chapter12.compund.dog.factory.AbstractDogFactory;
+import kr.co.oreb.dp.chapter12.compund.dog.factory.CountingDogFactory;
+import kr.co.oreb.dp.chapter12.compund.dog.observer.BarkOlogist;
+import kr.co.oreb.dp.chapter12.compund.mvc.controller.BeatBeatController;
+import kr.co.oreb.dp.chapter12.compund.mvc.model.BeatModel;
+import kr.co.oreb.dp.chapter12.compund.mvc.model.BeatModelInterface;
+import kr.co.oreb.dp.chapter12.compund.mvc.view.DJView;
 import org.junit.jupiter.api.Test;
 
 public class CompoundTest {
@@ -48,6 +52,18 @@ public class CompoundTest {
 
     private void simulate(Barkable barkable) {
         barkable.bark();
+    }
+
+    @Test
+    void MVCTest() {
+        BeatModelInterface beatModel = new BeatModel();
+        DJView view = new DJView(new BeatBeatController(beatModel), beatModel);
+
+        view.pressStartButton();
+        view.pressIncreaseBPM();
+        view.pressDecreaseBPM();
+        view.setBPM(100);
+        view.pressStopButton();
     }
 
 }

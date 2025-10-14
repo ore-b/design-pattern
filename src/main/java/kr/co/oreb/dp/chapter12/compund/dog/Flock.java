@@ -1,10 +1,10 @@
-package kr.co.oreb.dp.chapter12.compund;
+package kr.co.oreb.dp.chapter12.compund.dog;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import kr.co.oreb.dp.chapter12.compund.observer.BarkObservable;
-import kr.co.oreb.dp.chapter12.compund.observer.Observer;
+import kr.co.oreb.dp.chapter12.compund.dog.observer.BarkObservable;
+import kr.co.oreb.dp.chapter12.compund.dog.observer.Observer;
 
 public class Flock implements Barkable {
 
