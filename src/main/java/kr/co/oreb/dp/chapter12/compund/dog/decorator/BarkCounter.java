@@ -9,22 +9,22 @@ public class BarkCounter implements Barkable {
 
     public static int BARK_COUNT = 0;
 
-    private final Barkable barkable;
+    private final Barkable dog;
 
     @Override
     public void bark() {
-        barkable.bark();
+        dog.bark();
         BARK_COUNT++;
     }
 
 
     @Override
     public void registerObserver(Observer observer) {
-        barkable.registerObserver(observer);
+        dog.registerObserver(observer);
     }
 
     @Override
     public void notifyObservers() {
-        barkable.notifyObservers();
+        dog.notifyObservers();
     }
 }

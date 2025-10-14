@@ -3,7 +3,6 @@ package kr.co.oreb.dp.chapter12.compund.dog;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import kr.co.oreb.dp.chapter12.compund.dog.observer.BarkObservable;
 import kr.co.oreb.dp.chapter12.compund.dog.observer.Observer;
 
 public class Flock implements Barkable {
@@ -32,6 +31,7 @@ public class Flock implements Barkable {
 
     @Override
     public void notifyObservers() {
-        barkers.forEach(BarkObservable::notifyObservers);
+        //Barkable 객체에서 알아서 notify 하기 때문에 flock 객체는 안해도됨
+//        barkers.forEach(BarkObservable::notifyObservers);
     }
 }
